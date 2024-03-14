@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Realidad Aumentada 06</title>
+    <!-- Incluimos la librería A-Frame -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- Incluimos ar.js para A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- Creamos nuestro propio contenido -->
+    <a-box position="0.011 0.658 -3.014" rotation="-0.490 -4.460 0.130" scale="0.120 1.390 0.130" color="#10C10E" shadow></a-box>
+      <a-torus position="-0.034 1.859 -2.983" radius="0.000" rotation="-87.570 -1.980 0.160" scale="0.005 -0.005 -0.980" color="#E51951" shadow></a-torus>
+      <a-cylinder position="0.017 0.076 -3.023" radius="1.5" height="1.5" scale="0.319 -0.093 0.254" color=" #24AB51" shadow></a-cylinder>
+      <a-plane position="0.010 0 -3.110" rotation="-90 -0.070 0" width="4" height="4" scale="-0.46 0.48 1" color="#23923A" shadow></a-plane>
+      <a-cone position="0.29 0.9 -3.03" rotation="1.45 0.14 -62.16" scale="-0.12 0.62 0.09" color="#10C10E"></a-cone>
+      <a-sky color="#A3E3FF"></a-sky>
+  
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>  
+</body>
+</html>
